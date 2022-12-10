@@ -1,10 +1,14 @@
 "use strict";
 //type checking in typescript
 // let nameOfMe : string = "shyam";
-let Summoner = {
-    name: "Summoner",
-    level: 75,
-    isExpansion: true,
-    jobAbilities: ["Astral Flow", "Elemental Siphon"]
-};
-g;
+// let attack = (target : Enemy)  =>{
+//     console.log(`Attacking to ${target.name}`)
+// }
+// attack = "Hello Enemy";
+// let attack = (target: Enemy) => {
+//     return target.hp - 2;
+//   };
+//   attack = (target: Enemy) => {
+//     console.log(`Attacking to ${target.name}`);
+//   }; // Error
+//   let attackResult = attack(lizard)

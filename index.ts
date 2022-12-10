@@ -100,16 +100,43 @@
 
 // in this case typescript provides type aliases
 
-type Job = {
-    name: string;
-    level: number;
-    isExpansion: boolean;
-    jobAbilities: string[];
-  };
+// type Job = {
+//     name: string;
+//     level: number;
+//     isExpansion: boolean;
+//     jobAbilities: string[];
+//   };
   
-  let Summoner: Job = {
-    name: "Summoner",
-    level: 75,
-    isExpansion: true,
-    jobAbilities: ["Astral Flow", "Elemental Siphon"]
-  };g
+//   let Summoner: Job = {
+//     name: "Summoner",
+//     level: 75,
+//     isExpansion: true,
+//     jobAbilities: ["Astral Flow", "Elemental Siphon"]
+//   };
+
+//funcations in typescript
+type Enemy = {
+    name : string,
+    hp : number,
+    level : number,
+    exp : number
+};
+
+
+
+// let attack = (target : Enemy)  =>{
+//     console.log(`Attacking to ${target.name}`)
+// }
+
+// attack = "Hello Enemy";
+
+
+// let attack = (target: Enemy) => {
+//     return target.hp - 2;
+//   };
+  
+//   attack = (target: Enemy) => {
+//     console.log(`Attacking to ${target.name}`);
+//   }; // Error
+  
+//   let attackResult = attack(lizard)
