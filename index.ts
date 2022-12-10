@@ -40,15 +40,76 @@
 
 
 //Arrays in Typescript
-let job = "red mage";
-let level = 80;
-let isExpansionJob = false;
-let jobAbilities = ['chainspell', 'convert']
+// let job = "red mage";
+// let level = 80;
+// let isExpansionJob = false;
+// let jobAbilities = ['chainspell', 'convert']
 
-jobAbilities.push('composure'); //ok
+// jobAbilities.push('composure'); //ok
 // jobAbilities.push(2) //throw error
 // jobAbilities[0] = false; // throw error
 
 
+// let job = "Red Mage";
+// let level = 75;
+// let isExpansionJob = false;
+// let jobAbilities = ['Chainspell', 'Convert'];
+// let swordSkill = ["B", 5, 144, 398]; 
+
+// swordSkill.push("B+"); // OK
+// swordSkill.push(230); // OK
+
+// swordSkill[1] = "C"; 
+// OK, the type is not position related
+
+// swordSkill.push(true); // Error
+
+// As in the previous example, type inference is done in the declaration. We now declare an array of strings and numbers for swordSkill.
+
+// If you want to explicitly declare the types for the arrays we saw above:
+// let jobAbilities: string[] = ['Chainspell', 'Convert'];
+// let swordSkill: (string | number | boolean)[] = ["B", 5, 144, 398, true];
 
 
+// Objects in Typescipt
+// let job = {
+//     name :  "Summoner",
+//     level: 75,
+//     isExpansion: true,
+//     jobAbilities: ["Astral Flow", "Elemental Siphon"]
+//   };
+  
+//   job.name = "Blue Mage"; // OK
+//   job.level = "Four" // Error
+//   job.avatars = ["Carbuncle"]; // Error
+
+
+
+//checking explicit type of object, but its bit bigger for a simple object
+// let job: {
+//     name: string;
+//     level: number;
+//     isExpansion: boolean;
+//     jobAbilities: string[];
+//   } = {
+//     name: "Summoner",
+//     level: 75,
+//     isExpansion: true,
+//     jobAbilities: ["Astral Flow", "Elemental Siphon"]
+//   };
+
+// in this case typescript provides type aliases
+
+type Job = {
+    name: string;
+    level: number;
+    isExpansion: boolean;
+    jobAbilities: string[];
+  };
+  
+  let Summoner: Job = {
+    name: "Summoner",
+    level: 75,
+    isExpansion: true,
+    jobAbilities: ["Astral Flow", "Elemental Siphon"]
+  };g
